@@ -3,8 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgres"
+  url      = "postgres://postgres:123456@localhost:5432/schnappi"
 }
 
 model Product {
@@ -13,6 +13,6 @@ model Product {
   description String?
   active      Boolean @default(false)
   thumbnail   String
-  packshot    String @default("/uploads/")
-  price       Decimal @default(0.00)
+  packshot    String  @default("/uploads/")
+  price       Decimal @default(0.000000000000000000000000000000)
 }
