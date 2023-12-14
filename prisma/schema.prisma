@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgres"
-  url      = env("POSTGRES_URL")
+  url      = "postgres://postgres:123456@localhost:5432/schnappi"
 }
 
 model Product {
@@ -12,7 +12,6 @@ model Product {
   name        String
   description String?
   active      Boolean @default(false)
-  thumbnail   String
-  packshot    String  @default("/uploads/")
   price       Decimal @default(0.000000000000000000000000000000)
+  image_path  String
 }

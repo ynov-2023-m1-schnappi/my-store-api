@@ -6,8 +6,8 @@ const config = require('../config');
 const prisma = new PrismaClient();
 
 const s3 = new AWS.S3({
-    accessKeyId: config.access_Key,
-    secretAccessKey: config.secret_access_Key,
+    accessKeyId: 'AKIAS6JRDC7KNCJ4VFAV',
+    secretAccessKey: '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',
     region: 'us-east-1',
   });
 
@@ -17,6 +17,7 @@ exports.getProducts = async (req, res, next) => {
       where: { active: true },
       take: req.query.take ? Number(req.query.take) : 8,
     });
+    console.log(products)
     if (!products) {
       const err = throwError('No products found', 404);
       return next(err);
@@ -59,17 +60,30 @@ exports.getProduct = async (req, res, next) => {
 
 exports.createProduct = async (req, res, next) => {
     try {
-      console.log(req.file);
-  
-      // Convert the image to a buffer
-      const imageDataBuffer = await sharp(req.file.buffer).png().toBuffer();
-  
-      //const imageBlob = blobUtil.createBlob([imageDataBuffer], { type: 'image/png' });
+      const { name, price, description, active } = req.body;
 
-      // Define the parameters for the S3 upload
+      if (!name || !price || !description) {
+        const err = throwError('Name, price, and description are required fields', 400);
+        return next(err);
+      }
+
+      const imageDataBuffer = await sharp(req.file.buffer).png().toBuffer();
+
+      const image_path = `image_${Date.now()}.png`
+
+      const createdProduct = await prisma.product.create({
+        data: {
+          name,
+          price,
+          description,
+          active,
+          image_path,
+        },
+      });
+
       const params = {
         Bucket: 'my-store-ynov',
-        Key: 'image12456.png', // Provide a unique key for the image
+        Key: image_path, // Provide a unique key for the image
         Body: imageDataBuffer,
         ContentType: 'image/png', // Set the content type accordingly
       };
@@ -80,8 +94,12 @@ exports.createProduct = async (req, res, next) => {
       return res.json({
         success: true,
         message: 'Image uploaded to AWS S3 successfully.',
+        data: createdProduct,
       });
     } catch (err) {
       return next(err);
     }
   };
+
+
+  
