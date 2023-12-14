@@ -47,16 +47,15 @@ app.listen(config.port, () => {
     const data = JSON.parse(fs.readFileSync("./migrate/data.json", "utf8"));
     const prisma = new PrismaClient();
     for (let i = 0; i < data.length; i++) {
-        const { name, description, price, thumbnail, packshot, active } =
+        const { name, description, price, active, image_path } =
             data[i];
         await prisma.product.create({
             data: {
                 name: name,
                 description: description,
                 active: active,
-                thumbnail: thumbnail,
-                packshot: packshot,
                 price: price,
+                image_path: image_path
             },
         });
     }

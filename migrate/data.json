@@ -4,17 +4,15 @@
         "name": "W simple pant",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product1.webp",
-        "packshot": "/uploads/product1_packshot.jpeg",
-        "price": "123"
+        "price": "123",
+        "image_path": "image_1702565541394.png"
     },
     {
         "id": 2,
         "name": "Bib Overall Straight",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product2.webp",
-        "packshot": "/uploads/product2_packshot.jpeg",
+        "image_path": "image_1702565575826.png",
         "price": "136"
     },
     {
@@ -22,8 +20,7 @@
         "name": "W' L/S Kyle Shirt",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product3.jpeg",
-        "packshot": "/uploads/product3_packshot.jpeg",
+        "image_path": "image_1702565662387.png",
         "price": "89.5"
     },
     {
@@ -31,8 +28,7 @@
         "name": "W' American Scr. High Neck Swt",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product4.jpeg",
-        "packshot": "/uploads/product4_packshot.jpeg",
+        "image_path": "image_1702565684376.png",
         "price": "120.99"
     },
     {
@@ -40,8 +36,7 @@
         "name": "W' L/S Seidler T-Shir",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product5.jpeg",
-        "packshot": "/uploads/product5_packshot.jpeg",
+        "image_path": "image_1702565736320.png",
         "price": "70"
     },
     {
@@ -49,8 +44,7 @@
         "name": "W' OG Active Jacket",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product6.jpeg",
-        "packshot": "/uploads/product6_packshot.jpeg",
+        "image_path": "image_1702565772123.png",
         "price": "90"
     },
     {
@@ -58,8 +52,7 @@
         "name": "W' Ace Vest",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product7.webp",
-        "packshot": "/uploads/product7_packshot.jpeg",
+        "image_path": "image_1702565795202.png",
         "price": "78"
     },
     {
@@ -67,8 +60,7 @@
         "name": "W' L/S Craft Shirt ",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product8.webp",
-        "packshot": "/uploads/product8_packshot.jpeg",
+        "image_path": "image_1702565816188.png",
         "price": "90"
     },
     {
@@ -76,8 +68,7 @@
         "name": "W' Skyler Liner",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "active": true,
-        "thumbnail": "uploads/product9.jpeg",
-        "packshot": "/uploads/product9_packshot.jpeg",
+        "image_path": "image_1702565841473.png",
         "price": "370.5"
     }
 ]
