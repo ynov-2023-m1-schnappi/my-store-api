@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 // cors
 app.use(
     cors({
-        origin: config.frontend_url,
+        origin: "*",
     })
 );
 
@@ -47,15 +47,14 @@ app.listen(config.port, () => {
     const data = JSON.parse(fs.readFileSync("./migrate/data.json", "utf8"));
     const prisma = new PrismaClient();
     for (let i = 0; i < data.length; i++) {
-        const { name, description, price, active, image_path } =
-            data[i];
+        const { name, description, price, active, image_path } = data[i];
         await prisma.product.create({
             data: {
                 name: name,
                 description: description,
                 active: active,
                 price: price,
-                image_path: image_path
+                image_path: image_path,
             },
         });
     }
